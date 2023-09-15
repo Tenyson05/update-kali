@@ -13,7 +13,7 @@ are_we_on_wsl = os.path.exists("/mnt/c/Windows/System32/wsl.exe")
 
 if 'Kali' in release:
     # These directories will be removed from your home directory
-    # directories_to_remove = ['Documents', 'Music', 'Pictures', 'Public', 'Templates', 'Videos']
+    directories_to_remove = [] #['Documents', 'Music', 'Pictures', 'Public', 'Templates', 'Videos']
 
     # These kali packages will be installed
     packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'gobuster', 'amass',
@@ -57,8 +57,8 @@ if 'Kali' in release:
     # These git repositories will be synced to the 'personal repo' directory. I use my home directory.
     personal_repo_directory = os.getenv("HOME")
     personal_repositories_to_sync = [
-                                    'git@github.com:rafaelh/dotfiles',
-                                    'git@github.com:rafaelh/.private'
+                                    # 'git@github.com:rafaelh/dotfiles',
+                                    # 'git@github.com:rafaelh/.private'
                                     ]
 
     # Next, take a look in the /scripts directory. Every script ending in .sh or .py will be run,
